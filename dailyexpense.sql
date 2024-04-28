@@ -1,3 +1,11 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Apr 28, 2024 at 12:23 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -53,7 +61,36 @@ INSERT INTO `expenses` (`expense_id`, `user_id`, `expense`, `expensedate`, `expe
 (119, '9', 786, '2023-10-20', 'Food'),
 (120, '9', 1000, '2023-10-04', 'Entertainment'),
 (121, '9', 500, '2023-10-19', 'Clothings'),
-(122, '9', 426, '2023-10-16', 'Household Items');
+(122, '9', 426, '2023-10-16', 'Household Items'),
+(123, '13', 120, '2024-03-31', 'Food'),
+(124, '13', 240, '2024-03-30', 'Others'),
+(125, '13', 720, '2024-03-27', 'Bills & Recharges'),
+(126, '13', 500, '2024-03-23', 'Entertainment'),
+(127, '13', 2100, '2024-03-11', 'Clothings'),
+(128, '13', 423, '2024-02-14', 'Entertainment'),
+(129, '13', 763, '2024-01-16', 'Household Items'),
+(130, '13', 8210, '2023-12-29', 'Medicine'),
+(131, '13', 430, '2023-11-14', 'Medicine'),
+(133, '13', 4520, '2024-03-31', 'Rent'),
+(134, '15', 20, '2024-04-02', 'Food'),
+(135, '15', 165, '2024-03-31', 'Food'),
+(136, '15', 15, '2024-02-09', 'Bills & Recharges'),
+(137, '16', 1000, '2024-04-03', 'Clothings'),
+(138, '16', 500, '2024-04-03', 'Medicine'),
+(139, '16', 5000, '2024-04-03', 'Rent'),
+(140, '16', 5000, '2024-02-21', 'Entertainment'),
+(141, '16', 200000, '2024-03-08', 'Clothings'),
+(142, '17', 1000, '2024-01-01', 'Medicine'),
+(143, '17', 1900, '2024-01-15', 'Food'),
+(144, '17', 2700, '2024-01-31', 'Bills & Recharges'),
+(145, '17', 2460, '2024-02-01', 'Entertainment'),
+(146, '17', 1500, '2024-02-15', 'Clothings'),
+(147, '17', 4000, '2024-03-01', 'Rent'),
+(148, '17', 3500, '2024-03-15', 'Household Items'),
+(149, '17', 560, '2024-03-31', 'Others'),
+(150, '17', 4560, '2024-04-08', 'Clothings'),
+(151, '17', 520, '2024-04-06', 'Entertainment'),
+(153, '17', 8520, '2024-04-10', 'Medicine');
 
 -- --------------------------------------------------------
 
@@ -99,8 +136,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `firstname`, `lastname`, `email`, `password`) VALUES
-(9, 'Anjalita', 'Fernandes', 'anjalita@sjec.in', 'b7161ae9080c2604adb157463312ed47'),
-(12, 'Ebey', 'Joe Regi', 'ejr@sjec.in', '25d55ad283aa400af464c76d713c07ad');
+(13, 'pratik', 'abhang', 'pratik@gmail.com', 'f91e15dbec69fc40f81f0876e7009648');
 
 --
 -- Indexes for dumped tables
@@ -132,7 +168,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `expenses`
 --
 ALTER TABLE `expenses`
-  MODIFY `expense_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123;
+  MODIFY `expense_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=154;
 
 --
 -- AUTO_INCREMENT for table `expense_categories`
@@ -144,7 +180,7 @@ ALTER TABLE `expense_categories`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
